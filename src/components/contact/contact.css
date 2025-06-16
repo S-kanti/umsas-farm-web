@@ -1,0 +1,144 @@
+/* contact.css */
+
+.contact-section{
+display: flex;
+flex-direction: column;
+margin-bottom: 5rem;
+}
+.contact-section1 {
+  background-color: var(--neutral-cream);
+  color: var(--secondary-brown);
+  text-align: center;
+  border-radius: 15px;
+  margin: auto; 
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* subtle shadow */
+  background-color: rgba(76, 175, 80, 0.1); /* hint of primary green */
+  transform: translateY(-4px); /* gentle lift */
+}
+.cantact-img-con{   
+    width:50%;  
+    padding:20px 30px 30px;
+    
+}
+.contact-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;    
+    
+}
+.contact-form-con{
+    
+    width:50%;    
+    padding:10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 5px auto;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  text-align: left;
+  color: var(--secondary-brown);
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 0.5rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  resize: vertical;
+}
+
+.submit-btn {
+  align-self: center;
+  background-color: var(--primary-green);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: var(--accent-gold);
+  color: var(--secondary-brown);
+  transform: translateY(-2px);
+}
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #4caf50;
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #2e7d32;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 1rem;
+  }
+
+  .contact-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .contact-section1 {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .cantact-img-con,
+  .contact-form-con {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .contact-img {
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

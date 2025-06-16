@@ -1,0 +1,104 @@
+.services-section {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+
+}
+.services-container {
+  /* border: solid; */
+  display: flex;
+  flex-direction: row;
+}
+.services {
+  margin: 15px;
+  /* border: solid 1px; */
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(5, 17, 1, 0.053);
+  backdrop-filter: blur(50px);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.services:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* subtle shadow */
+  background-color: rgba(76, 175, 80, 0.1); /* hint of primary green */
+  transform: translateY(-4px); /* gentle lift */
+  border-color: var(--primary-green); /* border color change */
+  border: solid #5d4037 1px;
+}
+
+.servioces-img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.services-btn {
+  width: max-content;
+  display: inline-block;
+  color: #f5f5dc;
+  padding: 3px 5px;
+  border-radius: 10px;
+  border: 2px solid rgba(54, 134, 38, 0.567);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: var(---transition);
+  background-color: #4caf4faf;
+  font-weight: 100;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.services-btn:hover {
+  background: transparent;
+  color: var(--accent-gold);
+  border: 1px solid rgba(54, 134, 38, 0.567);
+  background-color: rgba(0, 0, 0, 0.266);
+  /* border-color: transparent; */
+}
+.services p {
+  font-size: 11px;
+  padding-bottom: 5px;
+}
+
+/* ...........................................Responsive Styles ......................................................*/
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+    
+  }
+
+  .services {
+    width: 90%;
+    margin: 10px 0;
+    padding: 15px;
+    
+    
+  }
+
+  .services p {
+    font-size: 13px;
+    /* text-align: center; */
+  }
+  .services-btn {
+    font-size: 14px;
+    align-items: center;
+ 
+  }
+
+}
+
+@media (max-width: 480px) {
+  .services p {
+    font-size: 12px;
+  }
+
+  .services-btn {
+    font-size: 12px;
+  }
+}

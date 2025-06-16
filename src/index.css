@@ -11,3 +11,148 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family:"Poppins", sans-serif;;
+}
+:root {
+   --primary-green: #4CAF50;       /*Used for headings and highlights */
+  --secondary-brown: #795548;     /* Used in backgrounds and text blocks */
+  --accent-gold: #FFC107;         /* Used for buttons */
+  --neutral-cream: #F5F5DC;       /* 	Used as the background color */
+  --text-dark-brown: #5D4037;     /* For body text under product names, clear and readable */
+
+  ---transition: all 400ms ease;
+
+  --container-width-lg: 80%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  max-width: 100%;
+  
+  font-family: "Poppins", sans-serif;
+  background: var(--neutral-cream);
+  color: var(--text-dark-brown);
+  line-height: 1.7;
+  /* background-image: url(../src/assets/bg-texture.png); */
+}
+
+/*------------------------General Styles---------------------------*/
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+section {
+  margin-top: 5rem;
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var( --primary-green);
+}
+ h2 {
+  color: var( --primary-green);
+  margin-bottom: 1rem;
+}
+.text-light {
+  color: var(--color-light);
+}
+a {
+  color: var(--color-primary);
+  transition: var(---transition);
+}
+a:hover {
+  color: var(--color-white);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: #F5F5DC;
+  padding: 0.75rem 1.2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+  border: 3px solid rgba(0, 0, 0, 0.259);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: var(---transition);
+  background-color: var(--primary-green);
+  font-weight: bolder;
+  font-size: large;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;  
+ 
+}
+
+.btn:hover {
+  background: var( --neutral-cream);
+  color: var( --accent-gold);
+  border-color: transparent;
+}
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*----------------- media queries fot tabs------------------------*/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/*----------------- media queries for phone------------------------*/
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  section {
+    margin-top: 6rem;
+  }
+
+  section > h1 {
+    margin-bottom: 2rem;
+  }
+}
