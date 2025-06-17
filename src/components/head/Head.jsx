@@ -1,6 +1,6 @@
 import React from "react";
 import "./head.css";
-import head from "../../assets/head.png";
+import head from "../../assets/head2.png";
 import Nav from "../nav/Nav";
 
 const Head = () => {
